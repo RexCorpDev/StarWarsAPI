@@ -1,0 +1,24 @@
+
+<div class="jumbotron text-center well">
+  <div class="text-center">
+    <div >
+      <h1 class="category">Categories</h1>
+      <hr>
+      <table>
+        <tbody>
+          <tr>
+            <td class="col-xs-2" ng-repeat='category in categories'>
+              <button class="btn btn-large" ui-sref='detail({ cat : category.name})'>
+                {{category.name}}
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-xs-2">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

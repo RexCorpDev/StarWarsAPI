@@ -1,0 +1,24 @@
+
+<div class="jumbotron well">
+  <div class="">
+    <div >
+      <h1 class="category">People</h1>
+      <hr>
+      <div ng-repeat='category in chosenCategory'>
+        <br>
+        <p class='catHeader'>
+          <button class="btn btn-small">{{category.people}}</button>
+        </p>
+            Height = {{category.height}},
+            Mass = {{category.mass}},
+            Gender = {{category.gender}},
+            Eye Color = {{category.eyecolor}},
+            Hair Color = {{category.haircolor}},
+            Species = {{category.species}},
+            Birth = {{category.birth}}
+        <br>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

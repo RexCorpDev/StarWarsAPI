@@ -1,0 +1,29 @@
+
+<div class="jumbotron well">
+  <div class="">
+    <div >
+      <h1 class="category">People</h1>
+      <hr>
+      <div ng-repeat='category in chosenCategory track by $index'>
+        <br>
+        <p class='catHeader'>
+          <button ng-click='moreInfo(category)' class="btn btn-small">{{category.people}}</button>
+        </p>
+        <div ng-show="info{{category.index}}">
+          Birth = {{category.birth}},
+          Height = {{category.height}},
+          Mass = {{category.mass}},
+          <br>
+          Gender = {{category.gender}},
+          Eye Color = {{category.eyecolor}},
+          Hair Color = {{category.haircolor}},
+          <br>
+          Species = {{category.species}},
+          Skin = {{category.skin}}
+        </div>
+        <br>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
